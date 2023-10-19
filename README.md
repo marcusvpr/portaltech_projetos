@@ -1,2 +1,2 @@
 # portaltech_projetos
-PortalTech Projetos
+PortalTech Projetos/Exercícios
