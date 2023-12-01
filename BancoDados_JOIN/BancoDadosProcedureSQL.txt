@@ -1,0 +1,9 @@
+-- Criação da procedure para o relatório diário
+CREATE PROCEDURE gerar_relatorio_diario()
+BEGIN
+  SELECT DATE(data_compra) AS dia, COUNT(*) AS quantidade_compras
+  FROM compras
+  GROUP BY dia;
+END;
+
+CALL gerar_relatorio_diario();
