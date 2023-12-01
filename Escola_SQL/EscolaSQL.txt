@@ -1,0 +1,47 @@
+-- Criar o banco de dados ESCOLA
+CREATE DATABASE ESCOLA;
+
+-- Usar o banco de dados ESCOLA
+USE ESCOLA;
+
+-- Criar a tabela ALUNO
+CREATE TABLE ALUNO (
+  ID INT PRIMARY KEY,
+  nome VARCHAR(255),
+  matricula VARCHAR(20),
+  email VARCHAR(255),
+  endereco VARCHAR(255)
+);
+
+INSERT INTO ALUNO (ID, nome, email, endereco)
+VALUES (1, 'Nome do Aluno', 'email@example.com', 'Endereço do Aluno');
+
+-- Criar a tabela LIVRO
+CREATE TABLE LIVRO (
+  ID INT PRIMARY KEY,
+  titulo VARCHAR(255),
+  autor VARCHAR(255),
+  sessao_id INT
+);
+
+-- Criar a tabela SESSÃO
+CREATE TABLE SESSAO (
+  ID INT PRIMARY KEY,
+  descricao VARCHAR(255),
+  localizacao VARCHAR(255)
+);
+
+-- Criar a tabela EMPRESTIMO
+CREATE TABLE EMPRESTIMO (
+  ID INT PRIMARY KEY,
+  data_hora VARCHAR(255),
+  data_devolucao VARCHAR(255)
+  aluno_id INT,
+);
+
+-- Criar a tabela LIVRO_EMPRESTIMO
+CREATE TABLE LIVRO_EMPRESTIMO (
+  ID INT PRIMARY KEY,
+  livro_id INT,
+  emprestimo_id INT
+);
