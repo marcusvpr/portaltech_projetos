@@ -1,0 +1,24 @@
+-- Banco de dados TRiGGERs (By: MarcusVPR)
+
+CREATE DATABASE banco_de_dados;
+
+USE banco_de_dados;
+
+
+-- Criação da tabela "produtos"
+CREATE TABLE produtos (
+  id INT PRIMARY KEY,
+  nome VARCHAR(50),
+  quantidade INT,
+  preco DECIMAL(10,2)
+);
+
+-- Criação do trigger para atualizar a quantidade de produtos após uma inserção
+CREATE TRIGGER atualizar_quantidade
+AFTER INSERT ON produtos
+FOR EACH ROW
+BEGIN
+  UPDATE produtos
+  SET quantidade = quantidade + NEW.quantidade
+  WHERE id = NEW.id;
+END;
