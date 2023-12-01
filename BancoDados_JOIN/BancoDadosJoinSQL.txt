@@ -1,0 +1,56 @@
+-- Banco de dados JOINs (By: MarcusVPR)
+
+CREATE DATABASE banco_de_dados;
+
+USE banco_de_dados;
+
+CREATE TABLE clientes (
+  nome VARCHAR(100),
+  email VARCHAR(100),
+  telefone VARCHAR(100)
+);
+
+CREATE TABLE pedidos (
+  id INT NOT NULL AUTO_INCREMENT,
+  cliente_id INT,
+  produto VARCHAR(100),
+  quantidade INT,
+  valor FLOAT
+);
+
+ALTER TABLE clientes ADD endereco VARCHAR(100);
+
+INSERT INTO clientes (nome, email, telefone)
+VALUES ('João da Silva', 'joao.silva@gmail.com', '1234-5678');
+
+INSERT INTO clientes (nome, email, telefone)
+VALUES ('Maria da Silva', 'maria.silva@gmail.com', '9876-5432');
+
+-- INNER JOIN: Retorna apenas os registros que existem nas duas tabelas.
+-- LEFT JOIN: Retorna todos os registros da tabela principal e os registros correspondentes da tabela secundária.
+-- OUTER JOIN: Retorna todos os registros da tabela principal, mesmo que não haja correspondência na tabela secundária.
+-- RIGHT JOIN: Retorna todos os registros da tabela secundária e os registros correspondentes da tabela principal.
+
+SELECT clientes.nome, clientes.email, pedidos.produto, pedidos.quantidade
+FROM clientes
+INNER JOIN pedidos
+ON clientes.id = pedidos.cliente_id;
+
+SELECT clientes.nome, clientes.email
+FROM clientes
+LEFT JOIN pedidos
+ON clientes.id = pedidos.cliente_id;
+
+-- erDiagram:
+--
+--  Clientes {
+--    id INT PK
+--    nome VARCHAR(100)
+--    email VARCHAR(100)
+--    endereco VARCHAR(100)
+--  }
+--  Pedidos {
+--    id INT PK
+--    cliente_id INT FK
+
+
