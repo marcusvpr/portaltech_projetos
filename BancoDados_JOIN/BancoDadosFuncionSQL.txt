@@ -1,0 +1,13 @@
+-- Banco Dados - Uso do FUNCTION ...
+
+CREATE FUNCTION contar_clientes_por_dia(dia DATE)
+RETURNS INT
+BEGIN
+    DECLARE total INT;
+    SELECT COUNT(*) INTO total
+    FROM clientes
+    WHERE data_cadastro = dia;
+    RETURN total;
+END //
+
+DELIMITER ;
