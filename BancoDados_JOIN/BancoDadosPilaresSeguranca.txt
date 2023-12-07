@@ -1,0 +1,15 @@
+Para projetar e desenvolver um novo banco de dados com segurança aprimorada, é importante seguir os seguintes pilares da segurança de dados:
+
+1. Confidencialidade: Garanta que apenas usuários autorizados tenham acesso aos dados sensíveis. Isso pode ser alcançado por meio de autenticação robusta, como senhas fortes, autenticação de dois fatores e controle de acesso baseado em função.
+
+2. Integridade: Certifique-se de que os dados permaneçam precisos e íntegros. Utilize técnicas de validação de dados, como restrições de integridade, para evitar a inserção de informações incorretas ou maliciosas no banco de dados.
+
+3. Disponibilidade: Garanta que o banco de dados esteja sempre disponível para os usuários autorizados. Isso pode ser alcançado por meio de redundância de servidores, backups regulares e planos de recuperação de desastres.
+
+4. Auditoria: Registre todas as atividades realizadas no banco de dados para fins de auditoria e conformidade. Isso inclui o monitoramento de acessos, modificações nos dados e tentativas de violação.
+
+5. Criptografia: Utilize criptografia para proteger os dados em trânsito e em repouso. Isso inclui o uso de protocolos seguros de comunicação, como HTTPS, e a criptografia dos dados armazenados no banco de dados.
+
+6. Monitoramento contínuo: Implemente mecanismos de monitoramento contínuo para identificar e responder a possíveis ameaças à segurança do banco de dados. Isso pode incluir a detecção de atividades suspeitas, como tentativas de acesso não autorizado ou modificações incomuns nos dados.
+
+Ao seguir esses pilares da segurança de dados, você estará melhorando a segurança do novo banco de dados e garantindo a proteção adequada das informações sensíveis da empresa de vendas.
