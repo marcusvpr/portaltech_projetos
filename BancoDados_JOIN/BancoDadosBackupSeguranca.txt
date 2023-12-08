@@ -1,0 +1,14 @@
+É muito importante ter senhas seguras para proteger nossos dados pessoais e profissionais. 
+
+Existem diversas maneiras de criar senhas fortes, aqui estão três métodos:
+
+1. Use senhas longas: quanto mais caracteres tiver a senha, mais difícil será para um hacker descobri-la. Tente usar pelo menos 12 caracteres, incluindo letras maiúsculas e minúsculas,
+números e símbolos.
+
+2. Evite informações pessoais: não use informações pessoais como datas de nascimento, nomes de 
+familiares ou animais de estimação, pois esses dados podem ser facilmente encontrados por 
+hackers. Use palavras aleatórias ou frases que só você conheça.
+
+3. Use autenticação de dois fatores: esta é uma camada adicional de segurança que requer um 
+segundo método de autenticação além da senha. Isso pode ser um código enviado por SMS ou um 
+aplicativo de autenticação que gera um código aleatório. Isso torna muito mais difícil para alguém acessar sua conta, mesmo que eles tenham sua senha.
